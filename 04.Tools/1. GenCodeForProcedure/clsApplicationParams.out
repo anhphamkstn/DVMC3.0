@@ -25,12 +25,12 @@
 <m_bSPIncludeNoCountStatements>false</m_bSPIncludeNoCountStatements>
 <m_bNETIncludeConnectionProviderSupport>false</m_bNETIncludeConnectionProviderSupport>
 <m_sSQLCatalog id="ref-3">DVMC</m_sSQLCatalog>
-<m_sSQLServer id="ref-4">LINHDH-PC\SQLEXPRESS</m_sSQLServer>
-<m_sSQLUID id="ref-5">sa</m_sSQLUID>
+<m_sSQLServer id="ref-4">42.112.35.37\SQL2008R2,1433</m_sSQLServer>
+<m_sSQLUID id="ref-5">dvmc</m_sSQLUID>
 <m_sNETNamespace id="ref-6">DVMCLLBL</m_sNETNamespace>
 <m_sSPNamePrefix id="ref-7">pr_</m_sSPNamePrefix>
-<m_sSPOutputPath id="ref-8">D:\06. TOPICA\02. Projects\34. DVMC\04.Tools\1. GenCodeForProcedure\StoredProcedures\</m_sSPOutputPath>
-<m_sNETOutputPath id="ref-9">D:\06. TOPICA\02. Projects\34. DVMC\04.Tools\1. GenCodeForProcedure\Classes\</m_sNETOutputPath>
+<m_sSPOutputPath id="ref-8">D:\</m_sSPOutputPath>
+<m_sNETOutputPath id="ref-9">D:\</m_sNETOutputPath>
 <m_sNETClassPrefix id="ref-10"></m_sNETClassPrefix>
 <m_iNETConnectionStringRetrieval>0</m_iNETConnectionStringRetrieval>
 <m_iNETOutputLanguage>0</m_iNETOutputLanguage>

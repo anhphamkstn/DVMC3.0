@@ -35,13 +35,13 @@ namespace TOSApp.ChucNang
             else endDate = (DateTime)deEndDate.EditValue;
              var states = (from CheckedListBoxItem item in chbbOrderState.Properties.Items
                         where item.CheckState == CheckState.Checked
-                        select (string)item.Value).ToArray();
-            string orderState = "";
+                        select item.Value.ToString()).ToArray();
+             string orderState = "";
             foreach (string state in states)
             {
-                orderState += state + "',";
+                orderState += state + ",";
             }
-            orderState += "''";
+            orderState += "0";
             v_us.FillAllOrder(v_ds, startDate, endDate, orderState);             
             m_grc_ds_tat_ca_don_dat_hang.DataSource = v_ds.Tables[0];
         }
