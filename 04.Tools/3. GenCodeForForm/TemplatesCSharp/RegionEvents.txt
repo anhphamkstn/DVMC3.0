@@ -1,0 +1,59 @@
+﻿//
+		//
+		//		EVENT HANLDERS
+		//
+		//
+		private void <FORM_NAME>_Load(object sender, System.EventArgs e) {
+			try{
+				set_initial_form_load();
+			}
+			catch (Exception v_e){
+				CSystemLog_301.ExceptionHandle(v_e);
+			}
+		
+		}
+
+		private void m_cmd_exit_Click(object sender, EventArgs e) {
+			try{
+				this.Close();
+			}
+			catch (Exception v_e){
+				CSystemLog_301.ExceptionHandle(v_e);
+			}
+		}
+
+		private void m_cmd_insert_Click(object sender, EventArgs e) {
+			try{
+				insert_<L/TABLE_NAME>();
+			}
+			catch (Exception v_e){
+				CSystemLog_301.ExceptionHandle(v_e);
+			}
+		}
+
+		private void m_cmd_update_Click(object sender, EventArgs e) {
+			try{
+				update_<L/TABLE_NAME>();
+			}
+			catch (Exception v_e){
+				CSystemLog_301.ExceptionHandle(v_e);
+			}
+		}
+
+		private void m_cmd_delete_Click(object sender, EventArgs e) {
+			try{
+				delete_<L/TABLE_NAME>();
+			}
+			catch (Exception v_e){
+				CSystemLog_301.ExceptionHandle(v_e);
+			}
+		}
+
+		private void m_cmd_view_Click(object sender, EventArgs e) {
+			try{
+				view_<L/TABLE_NAME>();
+			}
+			catch (Exception v_e){
+				CSystemLog_301.ExceptionHandle(v_e);
+			}
+		}

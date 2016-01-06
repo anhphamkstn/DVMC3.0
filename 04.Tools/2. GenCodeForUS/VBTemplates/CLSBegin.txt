@@ -1,0 +1,4 @@
+Public Class US_<TABLE_NAME>
+	Inherits US_Object
+
+	Private Const c_TableName as String = "<TABLE_NAME>"

@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DS_HT_THAM_SO_HE_THONG" targetNamespace="http://www.tempuri.org/DS_HT_THAM_SO_HE_THONG.xsd" xmlns:mstns="http://www.tempuri.org/DS_HT_THAM_SO_HE_THONG.xsd" xmlns="http://www.tempuri.org/DS_HT_THAM_SO_HE_THONG.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DS_HT_THAM_SO_HE_THONG" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="HT_THAM_SO_HE_THONG">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:decimal" />
+              <xs:element name="LOAI_THAM_SO" type="xs:string" />
+              <xs:element name="MA_THAM_SO" type="xs:string" />
+              <xs:element name="PHAN_HE" type="xs:string" />
+              <xs:element name="GHI_CHU" type="xs:string" />
+              <xs:element name="KIEU_DU_LIEU" type="xs:string" />
+              <xs:element name="GIA_TRI" type="xs:string" minOccurs="0" />
+              <xs:element name="CO_THE_NULL_YN" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HT_THAM_SO_HE_THONG" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

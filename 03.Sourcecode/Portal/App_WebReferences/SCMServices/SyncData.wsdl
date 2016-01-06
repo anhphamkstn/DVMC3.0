@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://tempuri.org/DS_V_DM_DIEM_HOC_VIEN.xsd" />
+      <s:import schemaLocation="http://210.245.89.37:88/SyncData.asmx?schema=DS_V_DM_DIEM_HOC_VIEN" namespace="http://tempuri.org/DS_V_DM_DIEM_HOC_VIEN.xsd" />
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="load_dataset_hoc_vien">
+        <s:complexType />
+      </s:element>
+      <s:element name="load_dataset_hoc_vienResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="check_trung_so_chung_tu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ip_so_phieu_thu_chi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="check_trung_so_chung_tuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="check_trung_so_chung_tuResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_khoan_thu_tam_l8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ip_id_so_phieu" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="ip_so_phieu_thu_chi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ip_quyen_bien_lai" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ip_ngay_thu_chi" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_khoan_thu_tam_l8Response">
+        <s:complexType />
+      </s:element>
+      <s:element name="Fill_HV_GHI_NHAN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ip_id_dot_ghi_nhan" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fill_HV_GHI_NHANResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fill_HV_GHI_NHANResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fill_dataset_by_dot_thu">
+        <s:complexType />
+      </s:element>
+      <s:element name="fill_dataset_by_dot_thuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fill_dataset_by_dot_thuResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fill_dataset">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="i_dc_id_hoc_vien" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fill_datasetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fill_datasetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/DS_V_DM_DIEM_HOC_VIEN.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NEU_FillDataset_by_school">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_ma_truong" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_dong_mo_yn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_duyet_yn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NEU_FillDataset_by_schoolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NEU_FillDataset_by_schoolResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NEU_fill_danh_sach_ho_so">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="i_dc_id_dot_ban_giao" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_user_report" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NEU_fill_danh_sach_ho_soResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NEU_fill_danh_sach_ho_soResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NEU_nghiem_thu_ho_so">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="i_dc_id_gd_ban_giao" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_user_report" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NEU_nghiem_thu_ho_soResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NEU_khong_nghiem_thu_ho_so">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="i_dc_id_gd_ban_giao" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_user_report" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NEU_khong_nghiem_thu_ho_soResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NEU_dong_dot_ban_giao_ho_so">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="i_dc_id_dot_ban_giao" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NEU_dong_dot_ban_giao_ho_soResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="NEU_khoa_dot_ban_giao_ho_so">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="i_dc_id_dot_ban_giao" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NEU_khoa_dot_ban_giao_ho_soResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="TOS_search_info_hoc_vien">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_key_search" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TOS_search_info_hoc_vienResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TOS_search_info_hoc_vienResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TOS_search_qlht_all_T">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_key_search" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TOS_search_qlht_all_TResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TOS_search_qlht_all_TResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TOS_check_login_scm_status">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="i_str_ma_truong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TOS_check_login_scm_statusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TOS_check_login_scm_statusResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="load_dataset_hoc_vienSoapIn">
+    <wsdl:part name="parameters" element="tns:load_dataset_hoc_vien" />
+  </wsdl:message>
+  <wsdl:message name="load_dataset_hoc_vienSoapOut">
+    <wsdl:part name="parameters" element="tns:load_dataset_hoc_vienResponse" />
+  </wsdl:message>
+  <wsdl:message name="check_trung_so_chung_tuSoapIn">
+    <wsdl:part name="parameters" element="tns:check_trung_so_chung_tu" />
+  </wsdl:message>
+  <wsdl:message name="check_trung_so_chung_tuSoapOut">
+    <wsdl:part name="parameters" element="tns:check_trung_so_chung_tuResponse" />
+  </wsdl:message>
+  <wsdl:message name="update_khoan_thu_tam_l8SoapIn">
+    <wsdl:part name="parameters" element="tns:update_khoan_thu_tam_l8" />
+  </wsdl:message>
+  <wsdl:message name="update_khoan_thu_tam_l8SoapOut">
+    <wsdl:part name="parameters" element="tns:update_khoan_thu_tam_l8Response" />
+  </wsdl:message>
+  <wsdl:message name="Fill_HV_GHI_NHANSoapIn">
+    <wsdl:part name="parameters" element="tns:Fill_HV_GHI_NHAN" />
+  </wsdl:message>
+  <wsdl:message name="Fill_HV_GHI_NHANSoapOut">
+    <wsdl:part name="parameters" element="tns:Fill_HV_GHI_NHANResponse" />
+  </wsdl:message>
+  <wsdl:message name="fill_dataset_by_dot_thuSoapIn">
+    <wsdl:part name="parameters" element="tns:fill_dataset_by_dot_thu" />
+  </wsdl:message>
+  <wsdl:message name="fill_dataset_by_dot_thuSoapOut">
+    <wsdl:part name="parameters" element="tns:fill_dataset_by_dot_thuResponse" />
+  </wsdl:message>
+  <wsdl:message name="fill_datasetSoapIn">
+    <wsdl:part name="parameters" element="tns:fill_dataset" />
+  </wsdl:message>
+  <wsdl:message name="fill_datasetSoapOut">
+    <wsdl:part name="parameters" element="tns:fill_datasetResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEU_FillDataset_by_schoolSoapIn">
+    <wsdl:part name="parameters" element="tns:NEU_FillDataset_by_school" />
+  </wsdl:message>
+  <wsdl:message name="NEU_FillDataset_by_schoolSoapOut">
+    <wsdl:part name="parameters" element="tns:NEU_FillDataset_by_schoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEU_fill_danh_sach_ho_soSoapIn">
+    <wsdl:part name="parameters" element="tns:NEU_fill_danh_sach_ho_so" />
+  </wsdl:message>
+  <wsdl:message name="NEU_fill_danh_sach_ho_soSoapOut">
+    <wsdl:part name="parameters" element="tns:NEU_fill_danh_sach_ho_soResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEU_nghiem_thu_ho_soSoapIn">
+    <wsdl:part name="parameters" element="tns:NEU_nghiem_thu_ho_so" />
+  </wsdl:message>
+  <wsdl:message name="NEU_nghiem_thu_ho_soSoapOut">
+    <wsdl:part name="parameters" element="tns:NEU_nghiem_thu_ho_soResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEU_khong_nghiem_thu_ho_soSoapIn">
+    <wsdl:part name="parameters" element="tns:NEU_khong_nghiem_thu_ho_so" />
+  </wsdl:message>
+  <wsdl:message name="NEU_khong_nghiem_thu_ho_soSoapOut">
+    <wsdl:part name="parameters" element="tns:NEU_khong_nghiem_thu_ho_soResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEU_dong_dot_ban_giao_ho_soSoapIn">
+    <wsdl:part name="parameters" element="tns:NEU_dong_dot_ban_giao_ho_so" />
+  </wsdl:message>
+  <wsdl:message name="NEU_dong_dot_ban_giao_ho_soSoapOut">
+    <wsdl:part name="parameters" element="tns:NEU_dong_dot_ban_giao_ho_soResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEU_khoa_dot_ban_giao_ho_soSoapIn">
+    <wsdl:part name="parameters" element="tns:NEU_khoa_dot_ban_giao_ho_so" />
+  </wsdl:message>
+  <wsdl:message name="NEU_khoa_dot_ban_giao_ho_soSoapOut">
+    <wsdl:part name="parameters" element="tns:NEU_khoa_dot_ban_giao_ho_soResponse" />
+  </wsdl:message>
+  <wsdl:message name="TOS_search_info_hoc_vienSoapIn">
+    <wsdl:part name="parameters" element="tns:TOS_search_info_hoc_vien" />
+  </wsdl:message>
+  <wsdl:message name="TOS_search_info_hoc_vienSoapOut">
+    <wsdl:part name="parameters" element="tns:TOS_search_info_hoc_vienResponse" />
+  </wsdl:message>
+  <wsdl:message name="TOS_search_qlht_all_TSoapIn">
+    <wsdl:part name="parameters" element="tns:TOS_search_qlht_all_T" />
+  </wsdl:message>
+  <wsdl:message name="TOS_search_qlht_all_TSoapOut">
+    <wsdl:part name="parameters" element="tns:TOS_search_qlht_all_TResponse" />
+  </wsdl:message>
+  <wsdl:message name="TOS_check_login_scm_statusSoapIn">
+    <wsdl:part name="parameters" element="tns:TOS_check_login_scm_status" />
+  </wsdl:message>
+  <wsdl:message name="TOS_check_login_scm_statusSoapOut">
+    <wsdl:part name="parameters" element="tns:TOS_check_login_scm_statusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SyncDataSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="load_dataset_hoc_vien">
+      <wsdl:input message="tns:load_dataset_hoc_vienSoapIn" />
+      <wsdl:output message="tns:load_dataset_hoc_vienSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="check_trung_so_chung_tu">
+      <wsdl:input message="tns:check_trung_so_chung_tuSoapIn" />
+      <wsdl:output message="tns:check_trung_so_chung_tuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="update_khoan_thu_tam_l8">
+      <wsdl:input message="tns:update_khoan_thu_tam_l8SoapIn" />
+      <wsdl:output message="tns:update_khoan_thu_tam_l8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fill_HV_GHI_NHAN">
+      <wsdl:input message="tns:Fill_HV_GHI_NHANSoapIn" />
+      <wsdl:output message="tns:Fill_HV_GHI_NHANSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fill_dataset_by_dot_thu">
+      <wsdl:input message="tns:fill_dataset_by_dot_thuSoapIn" />
+      <wsdl:output message="tns:fill_dataset_by_dot_thuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fill_dataset">
+      <wsdl:input message="tns:fill_datasetSoapIn" />
+      <wsdl:output message="tns:fill_datasetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NEU_FillDataset_by_school">
+      <wsdl:input message="tns:NEU_FillDataset_by_schoolSoapIn" />
+      <wsdl:output message="tns:NEU_FillDataset_by_schoolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NEU_fill_danh_sach_ho_so">
+      <wsdl:input message="tns:NEU_fill_danh_sach_ho_soSoapIn" />
+      <wsdl:output message="tns:NEU_fill_danh_sach_ho_soSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NEU_nghiem_thu_ho_so">
+      <wsdl:input message="tns:NEU_nghiem_thu_ho_soSoapIn" />
+      <wsdl:output message="tns:NEU_nghiem_thu_ho_soSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NEU_khong_nghiem_thu_ho_so">
+      <wsdl:input message="tns:NEU_khong_nghiem_thu_ho_soSoapIn" />
+      <wsdl:output message="tns:NEU_khong_nghiem_thu_ho_soSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NEU_dong_dot_ban_giao_ho_so">
+      <wsdl:input message="tns:NEU_dong_dot_ban_giao_ho_soSoapIn" />
+      <wsdl:output message="tns:NEU_dong_dot_ban_giao_ho_soSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NEU_khoa_dot_ban_giao_ho_so">
+      <wsdl:input message="tns:NEU_khoa_dot_ban_giao_ho_soSoapIn" />
+      <wsdl:output message="tns:NEU_khoa_dot_ban_giao_ho_soSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TOS_search_info_hoc_vien">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ip_key_search = &lt;DIEN_THOAI&gt;&lt;HO_TEN&gt;&lt;EMAIL&gt;&lt;TU_KHOA&gt;&lt;CODE&gt;</wsdl:documentation>
+      <wsdl:input message="tns:TOS_search_info_hoc_vienSoapIn" />
+      <wsdl:output message="tns:TOS_search_info_hoc_vienSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TOS_search_qlht_all_T">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ip_key_search = &lt;MA_SINH_VIEN&gt;&lt;HO_TEN&gt;&lt;MA_LOP&gt;&lt;MA_TRUONG&gt;&lt;CODE&gt;</wsdl:documentation>
+      <wsdl:input message="tns:TOS_search_qlht_all_TSoapIn" />
+      <wsdl:output message="tns:TOS_search_qlht_all_TSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TOS_check_login_scm_status">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Return: Dataset[id,ten_that,ten_truy_cap,trang_thai_nguoi_su_dung]</wsdl:documentation>
+      <wsdl:input message="tns:TOS_check_login_scm_statusSoapIn" />
+      <wsdl:output message="tns:TOS_check_login_scm_statusSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SyncDataSoap" type="tns:SyncDataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="load_dataset_hoc_vien">
+      <soap:operation soapAction="http://tempuri.org/load_dataset_hoc_vien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="check_trung_so_chung_tu">
+      <soap:operation soapAction="http://tempuri.org/check_trung_so_chung_tu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_khoan_thu_tam_l8">
+      <soap:operation soapAction="http://tempuri.org/update_khoan_thu_tam_l8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fill_HV_GHI_NHAN">
+      <soap:operation soapAction="http://tempuri.org/Fill_HV_GHI_NHAN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fill_dataset_by_dot_thu">
+      <soap:operation soapAction="http://tempuri.org/fill_dataset_by_dot_thu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fill_dataset">
+      <soap:operation soapAction="http://tempuri.org/fill_dataset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_FillDataset_by_school">
+      <soap:operation soapAction="http://tempuri.org/NEU_FillDataset_by_school" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_fill_danh_sach_ho_so">
+      <soap:operation soapAction="http://tempuri.org/NEU_fill_danh_sach_ho_so" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_nghiem_thu_ho_so">
+      <soap:operation soapAction="http://tempuri.org/NEU_nghiem_thu_ho_so" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_khong_nghiem_thu_ho_so">
+      <soap:operation soapAction="http://tempuri.org/NEU_khong_nghiem_thu_ho_so" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_dong_dot_ban_giao_ho_so">
+      <soap:operation soapAction="http://tempuri.org/NEU_dong_dot_ban_giao_ho_so" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_khoa_dot_ban_giao_ho_so">
+      <soap:operation soapAction="http://tempuri.org/NEU_khoa_dot_ban_giao_ho_so" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TOS_search_info_hoc_vien">
+      <soap:operation soapAction="http://tempuri.org/TOS_search_info_hoc_vien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TOS_search_qlht_all_T">
+      <soap:operation soapAction="http://tempuri.org/TOS_search_qlht_all_T" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TOS_check_login_scm_status">
+      <soap:operation soapAction="http://tempuri.org/TOS_check_login_scm_status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SyncDataSoap12" type="tns:SyncDataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="load_dataset_hoc_vien">
+      <soap12:operation soapAction="http://tempuri.org/load_dataset_hoc_vien" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="check_trung_so_chung_tu">
+      <soap12:operation soapAction="http://tempuri.org/check_trung_so_chung_tu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_khoan_thu_tam_l8">
+      <soap12:operation soapAction="http://tempuri.org/update_khoan_thu_tam_l8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fill_HV_GHI_NHAN">
+      <soap12:operation soapAction="http://tempuri.org/Fill_HV_GHI_NHAN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fill_dataset_by_dot_thu">
+      <soap12:operation soapAction="http://tempuri.org/fill_dataset_by_dot_thu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fill_dataset">
+      <soap12:operation soapAction="http://tempuri.org/fill_dataset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_FillDataset_by_school">
+      <soap12:operation soapAction="http://tempuri.org/NEU_FillDataset_by_school" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_fill_danh_sach_ho_so">
+      <soap12:operation soapAction="http://tempuri.org/NEU_fill_danh_sach_ho_so" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_nghiem_thu_ho_so">
+      <soap12:operation soapAction="http://tempuri.org/NEU_nghiem_thu_ho_so" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_khong_nghiem_thu_ho_so">
+      <soap12:operation soapAction="http://tempuri.org/NEU_khong_nghiem_thu_ho_so" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_dong_dot_ban_giao_ho_so">
+      <soap12:operation soapAction="http://tempuri.org/NEU_dong_dot_ban_giao_ho_so" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NEU_khoa_dot_ban_giao_ho_so">
+      <soap12:operation soapAction="http://tempuri.org/NEU_khoa_dot_ban_giao_ho_so" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TOS_search_info_hoc_vien">
+      <soap12:operation soapAction="http://tempuri.org/TOS_search_info_hoc_vien" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TOS_search_qlht_all_T">
+      <soap12:operation soapAction="http://tempuri.org/TOS_search_qlht_all_T" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TOS_check_login_scm_status">
+      <soap12:operation soapAction="http://tempuri.org/TOS_check_login_scm_status" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SyncData">
+    <wsdl:port name="SyncDataSoap" binding="tns:SyncDataSoap">
+      <soap:address location="http://210.245.89.37:88/SyncData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SyncDataSoap12" binding="tns:SyncDataSoap12">
+      <soap12:address location="http://210.245.89.37:88/SyncData.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

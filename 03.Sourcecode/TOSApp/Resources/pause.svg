@@ -1,0 +1,17 @@
+<?xml version="1.0"?><svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <title>pause</title>
+ <defs>
+  <filter id="filter3316">
+   <feGaussianBlur id="feGaussianBlur3318" stdDeviation="0.586716"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g externalResourcesRequired="false" id="g3356">
+   <path d="m401.716522,252.141998a149.016769,140.550232 0 1 1 -298.033012,0a149.016769,140.550232 0 1 1 298.033012,0z" id="path2383" filter="url(#filter3316)" stroke-dashoffset="0" stroke-miterlimit="4" stroke="#000000" fill-rule="evenodd" fill="#ff0000"/>
+   <rect width="47.258029" height="147.052989" y="178.615549" id="rect3237" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="0.93142" stroke="#ffffff" fill-rule="evenodd" fill="#e6e6e6" x="273.002943"/>
+   <rect width="47.25804" height="147.052248" y="178.6163" id="rect3239" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="0.931418" stroke="#ffffff" fill-rule="evenodd" fill="#e6e6e6" x="185.139443"/>
+   <path d="m251.362839,114.536064c-79.983261,0 -144.922623,62.990288 -144.922623,140.573784c128.772247,-27.461609 160.133911,-27.824158 289.760101,0c0,-77.583496 -64.851563,-140.573784 -144.837479,-140.573784z" id="path3245" stroke-opacity="0.182573" stroke-dashoffset="0" stroke-miterlimit="4" stroke="#000000" fill-rule="evenodd" fill="#ffffff" opacity="0.5"/>
+  </g>
+ </g>
+</svg>

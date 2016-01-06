@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39DC1A18-A725-4DF1-93CE-467C130CEEF9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>IPCOREDS</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IPCOREDS</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CDBNames.cs" />
+    <Compile Include="DS_CM_DM_TU_DIEN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_BLACK_LIST.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_BLACK_LIST.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_CAU_HOI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_CAU_HOI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_CAU_TRA_LOI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_CAU_TRA_LOI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_DON_VI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_DON_VI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_KHACH_HANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_KHACH_HANG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_LOAI_YEU_CAU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_MAU_EMAIL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_MAU_EMAIL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_MA_DON_HANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_MA_DON_HANG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_NGUOI_DUNG_STATION.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_NGUOI_DUNG_STATION.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_QLHT_SCM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_QLHT_SCM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DOC_COLUMN_COMMENT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DOC_COLUMN_COMMENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DOC_TABLE_COMMENT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DOC_TABLE_COMMENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_GD_CUOC_GOI_YEU_CAU.cs">
+      <DependentUpon>DS_GD_CUOC_GOI_YEU_CAU.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_HT_LOG_API_CALL_CENTER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_HT_LOG_API_CALL_CENTER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_V_DM_LOAI_YEU_CAU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_V_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_V_DON_HANG_TRANG_THAI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_V_DON_HANG_TRANG_THAI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_GD_CUOC_GOI_YEU_CAU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GD_CUOC_GOI_YEU_CAU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_GD_DAT_HANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GD_DAT_HANG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_GD_LOG_DAT_HANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GD_LOG_DAT_HANG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_HT_BO_DICH_VU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_HT_BO_DICH_VU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_HT_NGUOI_SU_DUNG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_UT_SEQUENCES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_UT_SEQUENCES.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_V_GD_DAT_HANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_V_GD_DAT_HANG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_V_HT_NGUOI_SU_DUNG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_V_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DS_CM_DM_TU_DIEN.xsc">
+      <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </None>
+    <None Include="DS_CM_DM_TU_DIEN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CM_DM_TU_DIEN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_CM_DM_TU_DIEN.xss">
+      <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_BLACK_LIST.xsc">
+      <DependentUpon>DS_DM_BLACK_LIST.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_BLACK_LIST.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_BLACK_LIST.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_BLACK_LIST.xss">
+      <DependentUpon>DS_DM_BLACK_LIST.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_CAU_HOI.xsc">
+      <DependentUpon>DS_DM_CAU_HOI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_CAU_HOI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_CAU_HOI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_CAU_HOI.xss">
+      <DependentUpon>DS_DM_CAU_HOI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_CAU_TRA_LOI.xsc">
+      <DependentUpon>DS_DM_CAU_TRA_LOI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_CAU_TRA_LOI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_CAU_TRA_LOI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_CAU_TRA_LOI.xss">
+      <DependentUpon>DS_DM_CAU_TRA_LOI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_DON_VI.xsc">
+      <DependentUpon>DS_DM_DON_VI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_DON_VI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_DON_VI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_DON_VI.xss">
+      <DependentUpon>DS_DM_DON_VI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_KHACH_HANG.xsc">
+      <DependentUpon>DS_DM_KHACH_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_KHACH_HANG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_KHACH_HANG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_KHACH_HANG.xss">
+      <DependentUpon>DS_DM_KHACH_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_LOAI_YEU_CAU.xsc">
+      <DependentUpon>DS_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_LOAI_YEU_CAU.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_LOAI_YEU_CAU.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_LOAI_YEU_CAU.xss">
+      <DependentUpon>DS_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_MAU_EMAIL.xsc">
+      <DependentUpon>DS_DM_MAU_EMAIL.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_MAU_EMAIL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_MAU_EMAIL.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_MAU_EMAIL.xss">
+      <DependentUpon>DS_DM_MAU_EMAIL.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_MA_DON_HANG.xsc">
+      <DependentUpon>DS_DM_MA_DON_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_MA_DON_HANG.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_MA_DON_HANG.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_DM_MA_DON_HANG.xss">
+      <DependentUpon>DS_DM_MA_DON_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_NGUOI_DUNG_STATION.xsc">
+      <DependentUpon>DS_DM_NGUOI_DUNG_STATION.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_NGUOI_DUNG_STATION.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_NGUOI_DUNG_STATION.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_NGUOI_DUNG_STATION.xss">
+      <DependentUpon>DS_DM_NGUOI_DUNG_STATION.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_QLHT_SCM.xsc">
+      <DependentUpon>DS_DM_QLHT_SCM.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_QLHT_SCM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_QLHT_SCM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_QLHT_SCM.xss">
+      <DependentUpon>DS_DM_QLHT_SCM.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DOC_COLUMN_COMMENT.xsc">
+      <DependentUpon>DS_DOC_COLUMN_COMMENT.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DOC_COLUMN_COMMENT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DOC_COLUMN_COMMENT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_DOC_COLUMN_COMMENT.xss">
+      <DependentUpon>DS_DOC_COLUMN_COMMENT.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DOC_TABLE_COMMENT.xsc">
+      <DependentUpon>DS_DOC_TABLE_COMMENT.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DOC_TABLE_COMMENT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DOC_TABLE_COMMENT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_DOC_TABLE_COMMENT.xss">
+      <DependentUpon>DS_DOC_TABLE_COMMENT.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_LOG_API_CALL_CENTER.xsc">
+      <DependentUpon>DS_HT_LOG_API_CALL_CENTER.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_LOG_API_CALL_CENTER.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_HT_LOG_API_CALL_CENTER.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_HT_LOG_API_CALL_CENTER.xss">
+      <DependentUpon>DS_HT_LOG_API_CALL_CENTER.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_DM_LOAI_YEU_CAU.xsc">
+      <DependentUpon>DS_V_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_DM_LOAI_YEU_CAU.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_V_DM_LOAI_YEU_CAU.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_V_DM_LOAI_YEU_CAU.xss">
+      <DependentUpon>DS_V_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_DON_HANG_TRANG_THAI.xsc">
+      <DependentUpon>DS_V_DON_HANG_TRANG_THAI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_DON_HANG_TRANG_THAI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_V_DON_HANG_TRANG_THAI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_V_DON_HANG_TRANG_THAI.xss">
+      <DependentUpon>DS_V_DON_HANG_TRANG_THAI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GD_CUOC_GOI_YEU_CAU.xsc">
+      <DependentUpon>DS_GD_CUOC_GOI_YEU_CAU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GD_CUOC_GOI_YEU_CAU.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GD_CUOC_GOI_YEU_CAU.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_GD_CUOC_GOI_YEU_CAU.xss">
+      <DependentUpon>DS_GD_CUOC_GOI_YEU_CAU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GD_DAT_HANG.xsc">
+      <DependentUpon>DS_GD_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GD_DAT_HANG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GD_DAT_HANG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_GD_DAT_HANG.xss">
+      <DependentUpon>DS_GD_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GD_LOG_DAT_HANG.xsc">
+      <DependentUpon>DS_GD_LOG_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GD_LOG_DAT_HANG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GD_LOG_DAT_HANG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_GD_LOG_DAT_HANG.xss">
+      <DependentUpon>DS_GD_LOG_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_BO_DICH_VU.xsc">
+      <DependentUpon>DS_HT_BO_DICH_VU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_BO_DICH_VU.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_HT_BO_DICH_VU.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_HT_BO_DICH_VU.xss">
+      <DependentUpon>DS_HT_BO_DICH_VU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_NGUOI_SU_DUNG.xsc">
+      <DependentUpon>DS_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_NGUOI_SU_DUNG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_HT_NGUOI_SU_DUNG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_HT_NGUOI_SU_DUNG.xss">
+      <DependentUpon>DS_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsc">
+      <DependentUpon>DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xss">
+      <DependentUpon>DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsd</DependentUpon>
+    </None>
+    <None Include="DS_UT_SEQUENCES.xsc">
+      <DependentUpon>DS_UT_SEQUENCES.xsd</DependentUpon>
+    </None>
+    <None Include="DS_UT_SEQUENCES.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_UT_SEQUENCES.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_UT_SEQUENCES.xss">
+      <DependentUpon>DS_UT_SEQUENCES.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_GD_DAT_HANG.xsc">
+      <DependentUpon>DS_V_GD_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_GD_DAT_HANG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_V_GD_DAT_HANG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_V_GD_DAT_HANG.xss">
+      <DependentUpon>DS_V_GD_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xsc">
+      <DependentUpon>DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xss">
+      <DependentUpon>DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_HT_NGUOI_SU_DUNG.xsc">
+      <DependentUpon>DS_V_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_HT_NGUOI_SU_DUNG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_V_HT_NGUOI_SU_DUNG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_V_HT_NGUOI_SU_DUNG.xss">
+      <DependentUpon>DS_V_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

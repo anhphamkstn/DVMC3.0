@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div id="header">
+        <img alt="Logo TOPICA" src="Img/topicalogo.png" />
+        <p style="text-align: right; padding-top: 20px; color: #810C15; font-size: 18px; font-weight: normal;">
+            Xin chào: <span style="font-weight:bold;">
+                        <asp:Label runat="server" ID="m_lbl_username"></asp:Label>
+                      </span>
+            &nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="m_lnk_logout" runat="server" CssClass="accountInfo" 
+                    NavigateUrl="~/Account/Logout.aspx">Đăng xuất</asp:HyperLink>
+        </p>
+    </div>
+    
+    <div id="banner">
+        <div class="div-home-page">
+            <a href="Default.aspx" title="Quay về trang chủ">
+                <img alt="homepage" src="Img/homePortal.png" style="width: 34px; cursor: pointer;
+                    margin-left: 20px;" />
+            </a>
+        </div>
+        <div class="div-header">
+            Cổng tra cứu các yêu cầu, câu hỏi của học viên cho QLHT
+        </div>
+    </div>
+    
+    <div id="container">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+    
+    </form>
+</body>
+</html>

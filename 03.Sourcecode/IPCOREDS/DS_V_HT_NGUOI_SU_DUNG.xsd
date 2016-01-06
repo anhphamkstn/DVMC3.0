@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_V_HT_NGUOI_SU_DUNG" targetNamespace="http://tempuri.org/DS_V_HT_NGUOI_SU_DUNG.xsd" xmlns:mstns="http://tempuri.org/DS_V_HT_NGUOI_SU_DUNG.xsd" xmlns="http://tempuri.org/DS_V_HT_NGUOI_SU_DUNG.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BKI_DVMCConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BKI_DVMCConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IPCOREDS.Properties.Settings.GlobalReference.Default.BKI_DVMCConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_HT_NGUOI_SU_DUNGTableAdapter" GeneratorDataComponentClassName="V_HT_NGUOI_SU_DUNGTableAdapter" Name="V_HT_NGUOI_SU_DUNG" UserDataComponentName="V_HT_NGUOI_SU_DUNGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BKI_DVMCConnectionString (Settings)" DbObjectName="BKI_DVMC.dbo.V_HT_NGUOI_SU_DUNG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, TEN_TRUY_CAP, TEN, MAT_KHAU, EMAIL, MAT_KHAU_EMAIL, ID_NHOM, ID_CHI_NHANH FROM dbo.V_HT_NGUOI_SU_DUNG</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="TEN_TRUY_CAP" DataSetColumn="TEN_TRUY_CAP" />
+              <Mapping SourceColumn="TEN" DataSetColumn="TEN" />
+              <Mapping SourceColumn="MAT_KHAU" DataSetColumn="MAT_KHAU" />
+              <Mapping SourceColumn="EMAIL" DataSetColumn="EMAIL" />
+              <Mapping SourceColumn="MAT_KHAU_EMAIL" DataSetColumn="MAT_KHAU_EMAIL" />
+              <Mapping SourceColumn="ID_NHOM" DataSetColumn="ID_NHOM" />
+              <Mapping SourceColumn="ID_CHI_NHANH" DataSetColumn="ID_CHI_NHANH" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_V_HT_NGUOI_SU_DUNG" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_V_HT_NGUOI_SU_DUNG" msprop:Generator_UserDSName="DS_V_HT_NGUOI_SU_DUNG">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_HT_NGUOI_SU_DUNG" msprop:Generator_TableClassName="V_HT_NGUOI_SU_DUNGDataTable" msprop:Generator_TableVarName="tableV_HT_NGUOI_SU_DUNG" msprop:Generator_TablePropName="V_HT_NGUOI_SU_DUNG" msprop:Generator_RowDeletingName="V_HT_NGUOI_SU_DUNGRowDeleting" msprop:Generator_RowChangingName="V_HT_NGUOI_SU_DUNGRowChanging" msprop:Generator_RowEvHandlerName="V_HT_NGUOI_SU_DUNGRowChangeEventHandler" msprop:Generator_RowDeletedName="V_HT_NGUOI_SU_DUNGRowDeleted" msprop:Generator_UserTableName="V_HT_NGUOI_SU_DUNG" msprop:Generator_RowChangedName="V_HT_NGUOI_SU_DUNGRowChanged" msprop:Generator_RowEvArgName="V_HT_NGUOI_SU_DUNGRowChangeEvent" msprop:Generator_RowClassName="V_HT_NGUOI_SU_DUNGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:decimal" />
+              <xs:element name="TEN_TRUY_CAP" msprop:Generator_ColumnVarNameInTable="columnTEN_TRUY_CAP" msprop:Generator_ColumnPropNameInRow="TEN_TRUY_CAP" msprop:Generator_ColumnPropNameInTable="TEN_TRUY_CAPColumn" msprop:Generator_UserColumnName="TEN_TRUY_CAP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEN" msprop:Generator_ColumnVarNameInTable="columnTEN" msprop:Generator_ColumnPropNameInRow="TEN" msprop:Generator_ColumnPropNameInTable="TENColumn" msprop:Generator_UserColumnName="TEN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAT_KHAU" msprop:Generator_ColumnVarNameInTable="columnMAT_KHAU" msprop:Generator_ColumnPropNameInRow="MAT_KHAU" msprop:Generator_ColumnPropNameInTable="MAT_KHAUColumn" msprop:Generator_UserColumnName="MAT_KHAU">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAIL" msprop:Generator_ColumnVarNameInTable="columnEMAIL" msprop:Generator_ColumnPropNameInRow="EMAIL" msprop:Generator_ColumnPropNameInTable="EMAILColumn" msprop:Generator_UserColumnName="EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAT_KHAU_EMAIL" msprop:Generator_ColumnVarNameInTable="columnMAT_KHAU_EMAIL" msprop:Generator_ColumnPropNameInRow="MAT_KHAU_EMAIL" msprop:Generator_ColumnPropNameInTable="MAT_KHAU_EMAILColumn" msprop:Generator_UserColumnName="MAT_KHAU_EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_NHOM" msprop:Generator_ColumnVarNameInTable="columnID_NHOM" msprop:Generator_ColumnPropNameInRow="ID_NHOM" msprop:Generator_ColumnPropNameInTable="ID_NHOMColumn" msprop:Generator_UserColumnName="ID_NHOM" type="xs:decimal" />
+              <xs:element name="ID_CHI_NHANH" msprop:Generator_ColumnVarNameInTable="columnID_CHI_NHANH" msprop:Generator_ColumnPropNameInRow="ID_CHI_NHANH" msprop:Generator_ColumnPropNameInTable="ID_CHI_NHANHColumn" msprop:Generator_UserColumnName="ID_CHI_NHANH" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_HT_NGUOI_SU_DUNG" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://210.245.89.37:88/SyncData.asmx?disco" filename="SyncData.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://210.245.89.37:88/SyncData.asmx?wsdl" filename="SyncData.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://210.245.89.37:88/SyncData.asmx?schema=DS_V_DM_DIEM_HOC_VIEN" filename="DS_V_DM_DIEM_HOC_VIEN.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:intf="http://callcenter.topica.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://callcenter.topica.com" targetNamespace="http://callcenter.topica.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://callcenter.topica.com">
+      <xsd:element name="submit">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="input" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="submitResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="submitReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="submitResponse">
+    <wsdl:part name="parameters" element="impl:submitResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitRequest">
+    <wsdl:part name="parameters" element="impl:submit" />
+  </wsdl:message>
+  <wsdl:portType name="CallCenter">
+    <wsdl:operation name="submit">
+      <wsdl:input name="submitRequest" message="impl:submitRequest" />
+      <wsdl:output name="submitResponse" message="impl:submitResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CallCenterSoapBinding" type="impl:CallCenter">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="submit">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="submitRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="submitResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CallCenterService">
+    <wsdl:port name="CallCenter" binding="impl:CallCenterSoapBinding">
+      <wsdlsoap:address location="http://203.162.121.70:8080/TPCDialOut2/services/CallCenter" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

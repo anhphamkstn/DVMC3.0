@@ -1,0 +1,17 @@
+	Public Sub New()
+		pm_objDS = New DS_<TABLE_NAME>()
+		pm_strTableName = c_TableName
+		pm_objDR = pm_objDS.Tables(pm_strTableName).NewRow()
+	End Sub
+
+	Public Sub New(ByVal i_objDR As DataRow)
+		Me.New()
+		Me.DataRow2Me(i_objDR)
+	End Sub
+
+	Public Sub New(ByVal i_dbID As Decimal)
+		pm_objDS = New DS_<TABLE_NAME>()
+		pm_strTableName = c_TableName
+		Me.FillDataset(pm_objDS, "Where ID = " & Str(i_dbID))
+		pm_objDR = getRowClone(pm_objds.Tables(pm_strTableName).Rows(0))
+	End Sub

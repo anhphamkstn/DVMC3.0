@@ -1,0 +1,16 @@
+	Public Property dat<PROPERTY_NAME>() As Date
+		Get
+			Return CNull.RowNVLDate(pm_objDR, "<PROPERTY_NAME>")
+		End Get
+		Set(ByVal Value As Date)
+			pm_objDR.Item("<PROPERTY_NAME>") = Value
+		End Set
+	End Property
+
+	Public Function Is<PROPERTY_NAME>Null() As Boolean
+		Return pm_objDR.IsNull("<PROPERTY_NAME>")
+	End Function
+
+	Public Sub Set<PROPERTY_NAME>Null()
+		pm_objDR("<PROPERTY_NAME>") = System.Convert.DBNull
+	End Sub

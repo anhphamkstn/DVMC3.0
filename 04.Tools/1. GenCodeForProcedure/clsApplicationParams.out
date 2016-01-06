@@ -1,0 +1,39 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:clsApplicationParams id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/LLBLGen/LLBLGen%2C%20Version%3D1.21.2003.712%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<m_bSQLWindowsAuthentication>false</m_bSQLWindowsAuthentication>
+<m_bNETIncludeAutoComplete>false</m_bNETIncludeAutoComplete>
+<m_bNETIncludeJITSupport>false</m_bNETIncludeJITSupport>
+<m_bNETIncludeLoadBalancingSupport>false</m_bNETIncludeLoadBalancingSupport>
+<m_bNETIncludeObjectPoolingSupport>false</m_bNETIncludeObjectPoolingSupport>
+<m_bSPGenerateSelectAllSPs>false</m_bSPGenerateSelectAllSPs>
+<m_bSPPrefixParams>false</m_bSPPrefixParams>
+<m_bSPGenerateDeleteSPs>true</m_bSPGenerateDeleteSPs>
+<m_bSPGenerateInsertSPs>true</m_bSPGenerateInsertSPs>
+<m_bSPGenerateUpdateSPs>true</m_bSPGenerateUpdateSPs>
+<m_bSPGenerateSelectSPs>false</m_bSPGenerateSelectSPs>
+<m_bSPIncludeComments>false</m_bSPIncludeComments>
+<m_bSPIncludeDrops>false</m_bSPIncludeDrops>
+<m_bSPIncludeErrorCodeSupport>false</m_bSPIncludeErrorCodeSupport>
+<m_bNETIncludeNullValueSupport>false</m_bNETIncludeNullValueSupport>
+<m_bSPUseFieldListSelectClause>true</m_bSPUseFieldListSelectClause>
+<m_bNETIncludeTransactionSupport>false</m_bNETIncludeTransactionSupport>
+<m_bNETIncludeCOMPlusSupport>false</m_bNETIncludeCOMPlusSupport>
+<m_bNETPrefixProperties>false</m_bNETPrefixProperties>
+<m_bNETStyleHungarian>false</m_bNETStyleHungarian>
+<m_bNETIncludeComments>true</m_bNETIncludeComments>
+<m_bSPIncludeNoCountStatements>false</m_bSPIncludeNoCountStatements>
+<m_bNETIncludeConnectionProviderSupport>false</m_bNETIncludeConnectionProviderSupport>
+<m_sSQLCatalog id="ref-3">DVMC</m_sSQLCatalog>
+<m_sSQLServer id="ref-4">LINHDH-PC\SQLEXPRESS</m_sSQLServer>
+<m_sSQLUID id="ref-5">sa</m_sSQLUID>
+<m_sNETNamespace id="ref-6">DVMCLLBL</m_sNETNamespace>
+<m_sSPNamePrefix id="ref-7">pr_</m_sSPNamePrefix>
+<m_sSPOutputPath id="ref-8">D:\06. TOPICA\02. Projects\34. DVMC\04.Tools\1. GenCodeForProcedure\StoredProcedures\</m_sSPOutputPath>
+<m_sNETOutputPath id="ref-9">D:\06. TOPICA\02. Projects\34. DVMC\04.Tools\1. GenCodeForProcedure\Classes\</m_sNETOutputPath>
+<m_sNETClassPrefix id="ref-10"></m_sNETClassPrefix>
+<m_iNETConnectionStringRetrieval>0</m_iNETConnectionStringRetrieval>
+<m_iNETOutputLanguage>0</m_iNETOutputLanguage>
+</a1:clsApplicationParams>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,20 @@
+		public string str<PROPERTY_NAME> 
+		{
+			get 
+			{
+				return CNull.RowNVLString(pm_objDR, "<PROPERTY_NAME>", IPConstants.c_DefaultString);
+			}
+			set 
+			{
+				pm_objDR["<PROPERTY_NAME>"] = value;
+			}
+		}
+
+		public bool Is<PROPERTY_NAME>Null() 
+		{
+			return pm_objDR.IsNull("<PROPERTY_NAME>");
+		}
+
+		public void Set<PROPERTY_NAME>Null() {
+			pm_objDR["<PROPERTY_NAME>"] = System.Convert.DBNull;
+		}

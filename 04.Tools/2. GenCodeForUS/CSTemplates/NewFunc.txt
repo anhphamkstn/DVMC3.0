@@ -1,0 +1,23 @@
+		public US_<TABLE_NAME>() 
+		{
+			pm_objDS = new DS_<TABLE_NAME>();
+			pm_strTableName = c_TableName;
+			pm_objDR = pm_objDS.Tables[pm_strTableName].NewRow();
+		}
+
+		public US_<TABLE_NAME>(DataRow i_objDR): this()
+		{
+			this.DataRow2Me(i_objDR);
+		}
+
+		public US_<TABLE_NAME>(decimal i_dbID) 
+		{
+			pm_objDS = new DS_<TABLE_NAME>();
+			pm_strTableName = c_TableName;
+			IMakeSelectCmd v_objMkCmd = new CMakeAndSelectCmd(pm_objDS, c_TableName);
+			v_objMkCmd.AddCondition("ID", i_dbID, eKieuDuLieu.KieuNumber, eKieuSoSanh.Bang);
+			SqlCommand v_cmdSQL;
+			v_cmdSQL = v_objMkCmd.getSelectCmd();
+			this.FillDatasetByCommand(pm_objDS, v_cmdSQL);
+			pm_objDR = getRowClone(pm_objDS.Tables[pm_strTableName].Rows[0]);
+		}

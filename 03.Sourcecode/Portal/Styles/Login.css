@@ -1,0 +1,84 @@
+/* Cho giao dien ngoai*/
+body
+{
+	font-family: Arial, Times New Roman, Tahoma;
+	font-size: 11px;
+	scrollbar-face-color: #E6EFF8;
+	scrollbar-highlight-color: #E6EFF8;
+	scrollbar-shadow-color: #E6EFF8;
+	scrollbar-track-color: #E6EFF8;
+	scrollbar-arrow-color: #E6EFF8;
+	scrollbar-darkshadow-color: #E6EFF8;
+}
+.cssTitleLogin
+{
+	color: White;
+	font-family:  Tahoma, Arial, Times New Roman;	
+	font-size: 15px;
+	font-weight:bold;
+}
+.cssLabel
+{
+	color: #666666;
+	font-family:  Tahoma, Arial, Times New Roman;	
+	font-size: 11px;
+	font-weight:bold;
+}
+.cssButton 
+{	
+	border: #5d5d5d 0px solid;
+	color: #df4017;
+	font-family: Tahoma, Arial, Times New Roman;
+	font-size: 11px;
+	font-weight: bold;
+	vertical-align:middle;
+	text-align:center;
+	background-image:url(../Img/BGButton.jpg);
+	height:22px;
+}
+.cssDorpdownlist
+{ 
+	border:1px solid #bbb;
+	border-bottom-color:#aaa;
+	border-right-color:#aaa;
+	background-color:#ffffff;
+	font-family: Tahoma, Arial, Times New Roman;
+	font-size:11px;
+	padding-left:2px; 
+}
+.cssCheckBox
+{ 
+	border:1px solid #bbb;
+	border-bottom-color:#aaa;
+	border-right-color:#aaa;
+	background-color:#ffffff;
+	font-family: Tahoma, Arial, Times New Roman;
+	font-size:11px;
+	padding-left:2px; 
+}
+.cssTextBox 
+{ 
+	border:1px solid #bbb;
+	border-bottom-color:#aaa;
+	border-right-color:#aaa;
+	background-color:#eee;
+	font-family: Tahoma, Arial, Times New Roman;
+	font-size:11px;
+	padding-left:2px; 
+}
+.cssTextBoxHover 
+{ 
+	border:1px solid #bbb;
+	border-bottom-color:#aaa;
+	border-right-color:#aaa;
+	background-color:#fff;
+	font-family: Tahoma, Arial, Times New Roman;
+	font-size:11px;
+	padding-left:2px; 
+}
+.cssManField {
+	color: #dd3309;
+	font-family: Arial, Tahoma, Times New Roman;	
+	font-size: 11px;
+	font-weight:bold;
+}

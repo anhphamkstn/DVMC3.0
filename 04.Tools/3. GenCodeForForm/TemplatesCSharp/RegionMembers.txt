@@ -1,0 +1,5 @@
+﻿		#region Members
+		ITransferDataRow m_obj_trans;		
+		DS_<U/TABLE_NAME> m_ds = new DS_<U/TABLE_NAME>();
+		US_<U/TABLE_NAME> m_us = new US_<U/TABLE_NAME>();
+		#endregion

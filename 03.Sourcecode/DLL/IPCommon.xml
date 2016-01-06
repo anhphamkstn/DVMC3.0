@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IPCommon
+</name>
+</assembly>
+<members>
+<member name="M:IP.Core.IPCommon.CGridUtils.AddSave_Excel_Handlers(C1.Win.C1FlexGrid.C1FlexGrid)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Thêm chức năng Save cho grid
+ </summary>
+	<param name="i_fg"></param>
+	<remarks>
+ Thường được gọi tại format control
+ </remarks>
+	<history>
+ 	[tund]	26/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:IP.Core.IPCommon.CControlFormat.setC1FlexFormatCanEdit(C1.Win.C1FlexGrid.C1FlexGrid)">
+	<summary>
+ Dùng để set các property của C1FlexGrid mà có thể Edit row
+ NinhVh sửa Ngày 21/01/2013
+ </summary>
+	<param name="i_fg"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

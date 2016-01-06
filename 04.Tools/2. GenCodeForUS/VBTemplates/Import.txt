@@ -1,0 +1,8 @@
+option Explicit On
+option Strict On
+
+Imports eSchool.eSchoolData
+Imports eSchool.eSchoolBusiness
+Imports IPCommon
+Imports IPUserService
+Imports System.Data.SqlClient

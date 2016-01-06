@@ -1,0 +1,5 @@
+﻿		#region Data Structure
+		private enum e_col_Number{
+			<COLUMN_LIST_TO_DISPLAY>
+		}			
+		#endregion

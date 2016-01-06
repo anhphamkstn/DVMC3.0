@@ -1,0 +1,259 @@
+#wrapper {
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+    height:520px;
+}
+
+img.stamp {
+    position: absolute;
+    top: 5px; right: 70px;
+}
+img.bottom {
+    position: absolute;
+    top: 510px; right: 70px;
+}
+img.top {
+    position: absolute;
+    top: -47px; right: 70px;
+}
+.div-controsl
+{
+    margin-top:40px;
+}
+.potition-button
+{
+    position:absolute;
+    top:415px;
+    left:420px;
+    border: #5d5d5d 0px solid;
+    color: Black; /*#df4017;*/
+    font-family: Tahoma, Arial, Times New Roman;
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    background-image: url('../Img/BGButton.jpg');
+    cursor: hand;
+}
+label {
+    display: block;
+    width: auto;
+}
+.div-captcha
+{
+    
+}
+.class-textbox{
+    width: 300px;
+    border-color:#B7B7B7 #E8E8E8 #E8E8E8 #B7B7B7;
+    border-style:solid;
+    border-width:1px;
+    padding:3px; margin-bottom: 10px;
+    font-size:14px;
+    color:#333;
+ }
+.captcha
+{
+     width: 150px;
+}
+ .class-textbox:focus, .class-textbox:focus {
+background: #fdffc8;
+}
+ 
+ textarea {
+    border-left: 1px solid #B7B7B7;
+    border-right: 1px solid #E8E8E8;
+    border-top: 1px solid #B7B7B7;
+    border-bottom: 1px solid #E8E8E8;
+    font-family:Arial, Tahoma, Helvetica, sans-serif;
+	font-size:100%;
+	padding:3px; margin-bottom: 10px;
+	display: block;
+ }
+ 
+  .rules {
+    position: absolute;
+    top: 270px; right: 70px;
+    width: 320px;
+ }
+  .ghi-chu-email {
+    position: absolute;
+    top: 168px; right: 70px;
+    width: 320px;
+ }
+ 
+label.error {
+    width: 180px;
+    border: 1px solid #b5b5b5;
+    padding: 2px 0px 0px 25px; margin: 5px 0px 0px 0px;
+    background: #fcf2c4 url(../../Img/error.png) no-repeat 5px 50%;
+    
+ }
+ 
+ span {
+    color: red;
+    font-weight: bold;
+ }
+ span.header-top
+ {
+     color: RGB(129,12,21);
+     position: absolute;
+     top: -40px; 
+     left:0px;
+     font-size:23px;
+ }
+ span.error {
+    color: red;
+    padding: 0px 0px 0px 25px;
+    background: url(../Img/error.png) no-repeat 5px 50%;
+ }
+ 
+ 
+ .warning {
+    color: red;
+    padding: 20px 0px 0px 20px;
+ }
+ 
+ .success {
+    color: green;
+    padding: 20px 0px 0px 20px;
+ }
+ 
+ 
+ /* Search box*/
+ .div-left
+ {
+     float:left;
+     width:50%;
+ }
+  .div-right
+ {
+     float:right;
+     width:50%;
+ }
+  .div-clear
+ {
+     clear:both;
+     height:10px;
+ }
+ .div-search-box
+ {
+     border:1px solid #CCC; 
+     height:400px;
+     text-align:center;
+ }
+ .div-result-box
+ {
+     margin-top:20px;
+ }
+ .div-result-message
+ {
+     text-align:right;
+ }
+ .div-header-box
+ {
+     color:RGB(129,12,21);
+     font-weight:bold;
+     font-size:18px;
+     text-align:left;
+     margin-bottom:20px;
+     margin-top:15px;
+     margin-left:5px;
+ }
+ .lbl-title
+ {
+     float:left;
+     vertical-align:middle;
+     width:31%;
+     text-align:left;
+	height: 21px;
+}
+ .lbl-title-dien-thoai
+ {
+     float:left;
+     vertical-align:middle;
+     width:25%;
+     text-align:left;
+ } 
+ .textbox-search
+ {
+     float:right;
+     width:65%;
+     text-align:left;
+ }
+ .calendar-search
+ {
+     float:right;
+     width:100px;
+     text-align:left;
+ }
+ .textbox-dien-thoai
+ {
+     float:left;
+     width:45%;
+     text-align:left;
+ }
+ .combobox-search
+ {
+     float:right;
+     width:65%;
+     text-align:left;
+ }
+ .lbl-result-chung-chi
+ {
+     font-weight:bold;
+     color:RGB(129,12,21);
+ }
+ .lbl-thong-bao
+ {
+     color:Black;
+     font-weight:normal;
+ }
+ .div-confirm-phan-hoi
+ {
+     margin:20px auto;
+     width:800px;
+     font-family:Arial;
+     text-align:center;
+     line-height:30px;
+ }
+ .div-back-homepage
+ {
+     margin:20px auto;
+     width:800px;
+     text-align:center;
+     font-size:18px;
+ }
+ 
+ 
+ /*Report*/
+.cssTitleReport 
+{
+	font-family: tahoma; 
+	font-size: 11px;
+	font-weight:bold;
+	border: 1px #000000 solid;
+	text-align:left;
+}
+.cssTitleReport2
+{
+	font-family: tahoma; 
+	font-size: 14px;
+	font-weight:bold;
+}
+.cssTableReport
+{	
+	border: 1px #000000 solid;
+}
+.cssLabelTitle
+{
+	font-family: tahoma; 
+	font-size: 12px;
+	font-weight:bold;
+}
+.cssLabel
+{
+    color:Black;
+    font-weight:normal;
+}

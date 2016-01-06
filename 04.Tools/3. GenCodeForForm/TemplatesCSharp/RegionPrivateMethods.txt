@@ -1,0 +1,93 @@
+﻿		#region Private Methods
+		private void format_controls(){
+			CControlFormat.setFormStyle(this, new CAppContext_201(), IPFormStyle.DialogForm);
+			CControlFormat.setC1FlexFormat(m_fg);
+			CGridUtils.AddSearch_Handlers(m_fg);
+            CGridUtils.AddSave_Excel_Handlers(m_fg);
+			set_define_events();
+			this.KeyPreview = true;
+		}
+		private void set_initial_form_load(){						
+			m_obj_trans = get_trans_object(m_fg);
+			load_data_2_grid();		
+		}	
+		private ITransferDataRow get_trans_object(C1.Win.C1FlexGrid.C1FlexGrid i_fg){
+			Hashtable v_htb = new Hashtable();
+			<COLUMN_LIST_TO_DISPLAY>						
+			ITransferDataRow v_obj_trans = new CC1TransferDataRow(i_fg,v_htb,m_ds.<U/TABLE_NAME>.NewRow());
+			return v_obj_trans;			
+		}
+		private void load_data_2_grid(){						
+			m_ds = new DS_<U/TABLE_NAME>();			
+			m_us.FillDataset(m_ds);
+			m_fg.Redraw = false;
+			CGridUtils.Dataset2C1Grid(m_ds, m_fg, m_obj_trans);
+			m_fg.Redraw = true;
+		}
+		private void grid2us_object(US_<U/TABLE_NAME> i_us
+			, int i_grid_row) {
+			DataRow v_dr;
+			v_dr = (DataRow) m_fg.Rows[i_grid_row].UserData;
+			m_obj_trans.GridRow2DataRow(i_grid_row,v_dr);
+			i_us.DataRow2Me(v_dr);
+		}
+
+	
+		private void us_object2grid(US_<U/TABLE_NAME> i_us
+			, int i_grid_row) {
+			DataRow v_dr = (DataRow) m_fg.Rows[i_grid_row].UserData;
+			i_us.Me2DataRow(v_dr);
+			m_obj_trans.DataRow2GridRow(v_dr, i_grid_row);
+		}
+
+
+		private void insert_<L/TABLE_NAME>(){			
+		//	<FORM_NAME>_DE v_fDE = new  <FORM_NAME>_DE();								
+		//	v_fDE.display();
+			load_data_2_grid();
+		}
+
+		private void update_<L/TABLE_NAME>(){			
+			if (!CGridUtils.IsThere_Any_NonFixed_Row(m_fg)) return;
+			if (!CGridUtils.isValid_NonFixed_RowIndex(m_fg, m_fg.Row)) return;			
+			grid2us_object(m_us, m_fg.Row);
+		//	<FORM_NAME>_DE v_fDE = new <FORM_NAME>_DE();
+		//	v_fDE.display(m_us);
+			load_data_2_grid();
+		}
+				
+		private void delete_<L/TABLE_NAME>(){
+			if (!CGridUtils.IsThere_Any_NonFixed_Row(m_fg)) return;
+			if (!CGridUtils.isValid_NonFixed_RowIndex(m_fg, m_fg.Row)) return;
+			if (BaseMessages.askUser_DataCouldBeDeleted(8) != BaseMessages.IsDataCouldBeDeleted.CouldBeDeleted)  return;
+			US_<U/TABLE_NAME> v_us = new US_<U/TABLE_NAME>();
+			grid2us_object(v_us, m_fg.Row);
+			try {			
+				v_us.BeginTransaction();    											
+				v_us.Delete();                      								
+				v_us.CommitTransaction();
+				m_fg.Rows.Remove(m_fg.Row);				
+			}
+			catch (Exception v_e) {
+				v_us.Rollback();
+				CDBExceptionHandler v_objErrHandler = new CDBExceptionHandler(v_e,
+					new CDBClientDBExceptionInterpret());
+				v_objErrHandler.showErrorMessage();
+			}
+		}
+
+		private void view_<L/TABLE_NAME>(){			
+			if (!CGridUtils.IsThere_Any_NonFixed_Row(m_fg)) return;
+			if (!CGridUtils.isValid_NonFixed_RowIndex(m_fg, m_fg.Row)) return;
+			grid2us_object(m_us, m_fg.Row);
+		//	<FORM_NAME>_DE v_fDE = new <FORM_NAME>_DE();			
+		//	v_fDE.display(m_us);
+		}
+		private void set_define_events(){
+			m_cmd_exit.Click += new EventHandler(m_cmd_exit_Click);
+			m_cmd_insert.Click += new EventHandler(m_cmd_insert_Click);
+			m_cmd_update.Click += new EventHandler(m_cmd_update_Click);
+			m_cmd_delete.Click += new EventHandler(m_cmd_delete_Click);
+			m_cmd_view.Click += new EventHandler(m_cmd_view_Click);
+		}
+		#endregion

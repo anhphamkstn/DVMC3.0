@@ -1,0 +1,183 @@
+﻿
+
+	public class <FORM_NAME> : System.Windows.Forms.Form
+	{
+		internal System.Windows.Forms.ImageList ImageList;
+		internal System.Windows.Forms.Panel m_pnl_out_place_dm;
+		private C1.Win.C1FlexGrid.C1FlexGrid m_fg;
+		internal SIS.Controls.Button.SiSButton m_cmd_delete;
+		internal SIS.Controls.Button.SiSButton m_cmd_update;
+		internal SIS.Controls.Button.SiSButton m_cmd_insert;
+		internal SIS.Controls.Button.SiSButton m_cmd_exit;
+		internal SIS.Controls.Button.SiSButton m_cmd_view;
+		private System.ComponentModel.IContainer components;
+
+		public <FORM_NAME>()
+		{
+			//
+			// Required for Windows Form Designer support
+			//
+			InitializeComponent();
+
+			//
+			// TODO: Add any constructor code after InitializeComponent call
+			//
+			format_controls();
+		}
+
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		protected override void Dispose( bool disposing )
+		{
+			if( disposing )
+			{
+				if(components != null)
+				{
+					components.Dispose();
+				}
+			}
+			base.Dispose( disposing );
+		}
+
+		#region Windows Form Designer generated code
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
+			this.components = new System.ComponentModel.Container();
+			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(<FORM_NAME>));
+			this.ImageList = new System.Windows.Forms.ImageList(this.components);
+			this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
+			this.m_cmd_delete = new SIS.Controls.Button.SiSButton();
+			this.m_cmd_update = new SIS.Controls.Button.SiSButton();
+			this.m_cmd_insert = new SIS.Controls.Button.SiSButton();
+			this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
+			this.m_cmd_view = new SIS.Controls.Button.SiSButton();
+			this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this.m_pnl_out_place_dm.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// ImageList
+			// 
+			this.ImageList.ImageSize = new System.Drawing.Size(16, 16);
+			this.ImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ImageList.ImageStream")));
+			this.ImageList.TransparentColor = System.Drawing.Color.Transparent;
+			// 
+			// m_pnl_out_place_dm
+			// 
+			this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_insert);
+			this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_update);
+			this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_view);
+			this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_delete);
+			this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
+			this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.m_pnl_out_place_dm.DockPadding.All = 4;
+			this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 373);
+			this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
+			this.m_pnl_out_place_dm.Size = new System.Drawing.Size(686, 36);
+			this.m_pnl_out_place_dm.TabIndex = 19;
+			// 
+			// m_cmd_delete
+			// 
+			this.m_cmd_delete.AdjustImageLocation = new System.Drawing.Point(0, 0);
+			this.m_cmd_delete.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+			this.m_cmd_delete.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+			this.m_cmd_delete.Dock = System.Windows.Forms.DockStyle.Right;
+			this.m_cmd_delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.m_cmd_delete.ImageIndex = 4;
+			this.m_cmd_delete.ImageList = this.ImageList;
+			this.m_cmd_delete.Location = new System.Drawing.Point(506, 4);
+			this.m_cmd_delete.Name = "m_cmd_delete";
+			this.m_cmd_delete.Size = new System.Drawing.Size(88, 28);
+			this.m_cmd_delete.TabIndex = 14;
+			this.m_cmd_delete.Text = "&Xoá";
+			// 
+			// m_cmd_update
+			// 
+			this.m_cmd_update.AdjustImageLocation = new System.Drawing.Point(0, 0);
+			this.m_cmd_update.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+			this.m_cmd_update.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+			this.m_cmd_update.Dock = System.Windows.Forms.DockStyle.Right;
+			this.m_cmd_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.m_cmd_update.ImageIndex = 3;
+			this.m_cmd_update.ImageList = this.ImageList;
+			this.m_cmd_update.Location = new System.Drawing.Point(418, 4);
+			this.m_cmd_update.Name = "m_cmd_update";
+			this.m_cmd_update.Size = new System.Drawing.Size(88, 28);
+			this.m_cmd_update.TabIndex = 13;
+			this.m_cmd_update.Text = "&Sửa";
+			// 
+			// m_cmd_insert
+			// 
+			this.m_cmd_insert.AdjustImageLocation = new System.Drawing.Point(0, 0);
+			this.m_cmd_insert.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+			this.m_cmd_insert.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+			this.m_cmd_insert.Dock = System.Windows.Forms.DockStyle.Right;
+			this.m_cmd_insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.m_cmd_insert.ImageIndex = 2;
+			this.m_cmd_insert.ImageList = this.ImageList;
+			this.m_cmd_insert.Location = new System.Drawing.Point(330, 4);
+			this.m_cmd_insert.Name = "m_cmd_insert";
+			this.m_cmd_insert.Size = new System.Drawing.Size(88, 28);
+			this.m_cmd_insert.TabIndex = 12;
+			this.m_cmd_insert.Text = "&Thêm";
+			// 
+			// m_cmd_exit
+			// 
+			this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
+			this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+			this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+			this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
+			this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.m_cmd_exit.ImageIndex = 12;
+			this.m_cmd_exit.ImageList = this.ImageList;
+			this.m_cmd_exit.Location = new System.Drawing.Point(594, 4);
+			this.m_cmd_exit.Name = "m_cmd_exit";
+			this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
+			this.m_cmd_exit.TabIndex = 11;
+			this.m_cmd_exit.Text = "Thoát (Esc)";
+			// 
+			// m_cmd_view
+			// 
+			this.m_cmd_view.AdjustImageLocation = new System.Drawing.Point(0, 0);
+			this.m_cmd_view.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+			this.m_cmd_view.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+			this.m_cmd_view.Dock = System.Windows.Forms.DockStyle.Left;
+			this.m_cmd_view.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.m_cmd_view.ImageIndex = 18;
+			this.m_cmd_view.ImageList = this.ImageList;
+			this.m_cmd_view.Location = new System.Drawing.Point(4, 4);
+			this.m_cmd_view.Name = "m_cmd_view";
+			this.m_cmd_view.Size = new System.Drawing.Size(88, 28);
+			this.m_cmd_view.TabIndex = 21;
+			this.m_cmd_view.Text = "Xem";
+			// 
+			// m_fg
+			// 
+			this.m_fg.ColumnInfo = @"<NUM_OF_COLS>,1,0,0,0,85,Columns:0{Width:13;}	 <COLS_INFO>	";
+			this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.m_fg.Location = new System.Drawing.Point(0, 0);
+			this.m_fg.Name = "m_fg";
+			this.m_fg.Size = new System.Drawing.Size(686, 373);
+			this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Alternate{BackColor:Info;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this.m_fg.TabIndex = 20;
+			// 
+			// <FORM_NAME>
+			// 
+			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+			this.ClientSize = new System.Drawing.Size(686, 409);
+			this.Controls.Add(this.m_fg);
+			this.Controls.Add(this.m_pnl_out_place_dm);
+			this.Name = "<FORM_NAME>";
+			this.Text = "<FORM_NAME>";
+			this.Load += new System.EventHandler(this.<FORM_NAME>_Load);
+			this.m_pnl_out_place_dm.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();
+			this.ResumeLayout(false);
+
+		}
+		#endregion

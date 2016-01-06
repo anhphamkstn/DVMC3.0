@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_CM_DM_TU_DIEN" targetNamespace="http://www.tempuri.org/DS_CM_DM_TU_DIEN.xsd" xmlns:mstns="http://www.tempuri.org/DS_CM_DM_TU_DIEN.xsd" xmlns="http://www.tempuri.org/DS_CM_DM_TU_DIEN.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_CM_DM_TU_DIEN" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_UserDSName="DS_CM_DM_TU_DIEN" msprop:Generator_DataSetName="DS_CM_DM_TU_DIEN">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CM_DM_TU_DIEN" msprop:Generator_UserTableName="CM_DM_TU_DIEN" msprop:Generator_RowDeletedName="CM_DM_TU_DIENRowDeleted" msprop:Generator_TableClassName="CM_DM_TU_DIENDataTable" msprop:Generator_RowChangedName="CM_DM_TU_DIENRowChanged" msprop:Generator_RowClassName="CM_DM_TU_DIENRow" msprop:Generator_RowChangingName="CM_DM_TU_DIENRowChanging" msprop:Generator_RowEvArgName="CM_DM_TU_DIENRowChangeEvent" msprop:Generator_RowEvHandlerName="CM_DM_TU_DIENRowChangeEventHandler" msprop:Generator_TablePropName="CM_DM_TU_DIEN" msprop:Generator_TableVarName="tableCM_DM_TU_DIEN" msprop:Generator_RowDeletingName="CM_DM_TU_DIENRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:decimal" />
+              <xs:element name="MA_TU_DIEN" msprop:Generator_UserColumnName="MA_TU_DIEN" msprop:Generator_ColumnPropNameInRow="MA_TU_DIEN" msprop:Generator_ColumnVarNameInTable="columnMA_TU_DIEN" msprop:Generator_ColumnPropNameInTable="MA_TU_DIENColumn" type="xs:string" />
+              <xs:element name="ID_LOAI_TU_DIEN" msprop:Generator_UserColumnName="ID_LOAI_TU_DIEN" msprop:Generator_ColumnPropNameInRow="ID_LOAI_TU_DIEN" msprop:Generator_ColumnVarNameInTable="columnID_LOAI_TU_DIEN" msprop:Generator_ColumnPropNameInTable="ID_LOAI_TU_DIENColumn" type="xs:decimal" />
+              <xs:element name="TEN_NGAN" msprop:Generator_UserColumnName="TEN_NGAN" msprop:Generator_ColumnPropNameInRow="TEN_NGAN" msprop:Generator_ColumnVarNameInTable="columnTEN_NGAN" msprop:Generator_ColumnPropNameInTable="TEN_NGANColumn" type="xs:string" />
+              <xs:element name="TEN" msprop:Generator_UserColumnName="TEN" msprop:Generator_ColumnPropNameInRow="TEN" msprop:Generator_ColumnVarNameInTable="columnTEN" msprop:Generator_ColumnPropNameInTable="TENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GHI_CHU" msprop:Generator_UserColumnName="GHI_CHU" msprop:Generator_ColumnPropNameInRow="GHI_CHU" msprop:Generator_ColumnVarNameInTable="columnGHI_CHU" msprop:Generator_ColumnPropNameInTable="GHI_CHUColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CM_DM_TU_DIEN" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

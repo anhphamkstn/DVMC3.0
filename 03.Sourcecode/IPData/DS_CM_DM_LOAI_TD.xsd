@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DS_CM_DM_LOAI_TD" targetNamespace="http://www.tempuri.org/DS_CM_DM_LOAI_TD.xsd" xmlns:mstns="http://www.tempuri.org/DS_CM_DM_LOAI_TD.xsd" xmlns="http://www.tempuri.org/DS_CM_DM_LOAI_TD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DS_CM_DM_LOAI_TD" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="CM_DM_LOAI_TD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:decimal" />
+              <xs:element name="MA_LOAI" type="xs:string" />
+              <xs:element name="TEN_LOAI" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CM_DM_LOAI_TD" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

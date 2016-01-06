@@ -1,0 +1,144 @@
+﻿@charset "utf-8";
+/*ezt komment CSS Document */
+
+#header
+{
+	width: 100%;
+	background-color: white;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#header img
+{
+	width: 170px;
+	height: 58px;
+	float: left;
+}
+
+#banner
+{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgb(129,12,21);
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.div-header
+{
+    color: White;
+    font-size:25px;
+    font-weight:bold;
+}
+.div-home-page
+{
+    float:left;
+    width:10%;
+    text-align:left;
+    vertical-align:middle;
+}
+    
+/*---------------------------------------------------------------------------*/
+/*Container*/
+#container
+{
+	background-color: white;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cssButton
+{
+    border: #5d5d5d 0px solid;
+    color: Black; /*#df4017;*/
+    font-family: Tahoma, Arial, Times New Roman;
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    background-image: url('../Img/BGButton.jpg');
+    cursor: hand;
+    }
+.cssLoadContent
+{
+    margin: 250px auto 0 auto;
+    width: 355px;
+    height: 65px;
+    border: 1px solid;
+    z-index: 9999;
+    box-shadow: 3px 3px gray;
+    background-color: White;
+    position: relative;
+}
+.cssLoadWapper
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9000;
+    top: 0;
+    left: 0; 
+}
+.cssLoadWapper:after
+{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0.3;
+    background-color: Gray;
+    width: 100%;
+    height: 100%; 
+}
+.cssLoadContent img
+{
+    margin: 10px 5px 0 5px;
+}
+
+.cssLoadContent p
+{
+    margin: 5px 5px 0 5px;
+    text-align: center; 
+}
+.cssManField
+{
+    color: RGB(129,12,21);
+    font-family: Arial, Tahoma, Times New Roman;
+    font-size: 12px;
+    font-weight: bold;
+}
+.cssPageTitleBG
+{	
+	border:solid 1px #b4b4b4; 
+	background-color: #3a4f63;
+	height:26px;	
+}
+.cssPageTitle
+{
+	padding-left: 9px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	font-weight: bold;
+	font-size: 12px;
+	font-family:Tahoma;		font-size:13px;	
+	color: White;			font-weight:bold;
+	text-align:left;	
+}
+.input-textbox-search
+{
+    background:url(../Img/bg_searchF.jpg) repeat-x; 
+    border:1px #dbdbdb solid; 
+    padding:4px;}
+.input-button-search
+{ 
+    background:url(../Img/btn_bg.jpg) no-repeat; 
+    width:110px; height:26px;
+    font-weight:bold; 
+    border:none;
+    margin-left:25px;
+}

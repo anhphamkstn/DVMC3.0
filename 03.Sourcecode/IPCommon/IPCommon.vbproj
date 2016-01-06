@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A74F1D1-C0EE-41FE-A708-A83B285ACCF2}</ProjectGuid>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>IPCommon</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>IP.Core.IPCommon</RootNamespace>
+    <StartupObject>IP.Core.IPCommon.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>IPCommon.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>IPCommon.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'PersonalBuild|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>IPCommon.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Common">
+      <Name>C1.Common</Name>
+      <HintPath>..\DLL\C1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid">
+      <Name>C1.Win.C1FlexGrid</Name>
+      <HintPath>..\DLL\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic">
+      <Name>C1.Win.C1FlexGrid.Classic</Name>
+      <HintPath>..\DLL\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole">
+      <Name>stdole</Name>
+      <HintPath>..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSettingsWriter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CBaseMessages210.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CC1TransferDataRow.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CControlFormat.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CConvert.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CDateCondition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CDateTime.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CDBUtils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CErrorTextBoxHanler.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CForm_Keydown_Handler.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CGridUtils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CIPConvert.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CIPKeys.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CListOfDataFromDB.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CMakeAndSelectCmd.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CMsgs211.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CNull.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CNullOfRow.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CNumberCondition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CReadnumeric_2_str.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CReportParameterFields.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CSaveTrangThai1DongCuaGrid.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CSearchInColumnOfFlexGrid.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CStringCondition.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CSystemLog_301.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CTabPageUtils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ctlButton2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlButton3.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlClock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtlMsgBtnYes_No_Cancel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlMsgBtn_Yes_No.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUtil.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CValidateTextBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataGrid_Custom.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatasetMsg.vb">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="f370_REPORT_VIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIcons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchNumeric.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchString.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMakeSelectCmd.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces_File.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPConstants.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPImages.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPStr.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MsgBoxFormYes_No.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxFormYes_No_Cancel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgBoxForm_OK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PHAN_HE.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransferData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Users_DataSet.vb">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="YNBool.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="ctlButton2.resx">
+      <DependentUpon>ctlButton2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlButton3.resx">
+      <DependentUpon>ctlButton3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlClock.resx">
+      <DependentUpon>ctlClock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtlMsgBtnYes_No_Cancel.resx">
+      <DependentUpon>CtlMsgBtnYes_No_Cancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlMsgBtn_Yes_No.resx">
+      <DependentUpon>ctlMsgBtn_Yes_No.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGrid_Custom.resx">
+      <DependentUpon>DataGrid_Custom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f370_REPORT_VIEW.resx">
+      <DependentUpon>f370_REPORT_VIEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditText.resx">
+      <DependentUpon>frmEditText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIcons.resx">
+      <DependentUpon>frmIcons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchDate.resx">
+      <DependentUpon>frmSearchDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchNumeric.resx">
+      <DependentUpon>frmSearchNumeric.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchString.resx">
+      <DependentUpon>frmSearchString.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxFormYes_No.resx">
+      <DependentUpon>MsgBoxFormYes_No.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxFormYes_No_Cancel.resx">
+      <DependentUpon>MsgBoxFormYes_No_Cancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgBoxForm_OK.resx">
+      <DependentUpon>MsgBoxForm_OK.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="DatasetMsg.xsd" />
+    <Content Include="Users_DataSet.xsd" />
+    <None Include="DatasetMsg.xsx">
+      <DependentUpon>DatasetMsg.xsd</DependentUpon>
+    </None>
+    <None Include="Users_DataSet.xsx">
+      <DependentUpon>Users_DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
