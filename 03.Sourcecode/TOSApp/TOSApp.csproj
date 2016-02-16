@@ -30,7 +30,7 @@
     <PublisherName>DVMC</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>67</ApplicationRevision>
+    <ApplicationRevision>68</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -263,11 +263,11 @@
     <Compile Include="Web References\App_Code\CSocketServer.cs" />
     <Compile Include="Web References\App_Code\CSystemLog_100.cs" />
     <Compile Include="Web References\App_Code\HelpUtils.cs" />
-    <Compile Include="BaoCao\f500_BAO_CAO_DANH_GIA.cs">
+    <Compile Include="BaoCao\f500_BAO_CAO_TONG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BaoCao\f500_BAO_CAO_DANH_GIA.Designer.cs">
-      <DependentUpon>f500_BAO_CAO_DANH_GIA.cs</DependentUpon>
+    <Compile Include="BaoCao\f500_BAO_CAO_TONG.Designer.cs">
+      <DependentUpon>f500_BAO_CAO_TONG.cs</DependentUpon>
     </Compile>
     <Compile Include="BaoCao\f510_BAO_CAO_TIEP_NHAN.cs">
       <SubType>Form</SubType>
@@ -569,8 +569,8 @@
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="WinFormControls.cs" />
-    <EmbeddedResource Include="BaoCao\f500_BAO_CAO_DANH_GIA.resx">
-      <DependentUpon>f500_BAO_CAO_DANH_GIA.cs</DependentUpon>
+    <EmbeddedResource Include="BaoCao\f500_BAO_CAO_TONG.resx">
+      <DependentUpon>f500_BAO_CAO_TONG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\f510_BAO_CAO_TIEP_NHAN.resx">
       <DependentUpon>f510_BAO_CAO_TIEP_NHAN.cs</DependentUpon>

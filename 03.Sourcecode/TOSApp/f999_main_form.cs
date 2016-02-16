@@ -635,7 +635,7 @@ namespace TOSApp
 
         }
 
-        TOSApp.BaoCao.f500_BAO_CAO_DANH_GIA v_bao_cao_danh_gia;
+        TOSApp.BaoCao.f500_BAO_CAO_TONG v_bao_cao_danh_gia;
         TOSApp.BaoCao.f510_BAO_CAO_TIEP_NHAN v_bao_cao_tiep_nhan;
         TOSApp.BaoCao.f520_BAO_CAO_XU_LI v_bao_cao_xu_ly;
 
@@ -673,7 +673,7 @@ namespace TOSApp
         {
             if (v_bao_cao_danh_gia == null || !IsFormOpen(v_bao_cao_danh_gia))
             {
-                v_bao_cao_danh_gia = new TOSApp.BaoCao.f500_BAO_CAO_DANH_GIA();
+                v_bao_cao_danh_gia = new TOSApp.BaoCao.f500_BAO_CAO_TONG();
                 v_bao_cao_danh_gia.MdiParent = this;
                 v_bao_cao_danh_gia.Show();
             }

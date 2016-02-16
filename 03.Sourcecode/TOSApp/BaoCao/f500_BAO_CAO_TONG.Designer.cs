@@ -1,6 +1,6 @@
 ﻿namespace TOSApp.BaoCao
 {
-    partial class f500_BAO_CAO_DANH_GIA
+    partial class f500_BAO_CAO_TONG
     {
         /// <summary>
         /// Required designer variable.
@@ -49,7 +49,7 @@
             this.pivotGridField7 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField8 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField9 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.chartControl = new DevExpress.XtraCharts.ChartControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
@@ -58,7 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
@@ -236,31 +236,31 @@
             this.pivotGridField9.FieldName = "loai_dv";
             this.pivotGridField9.Name = "pivotGridField9";
             // 
-            // chartControl1
+            // chartControl
             // 
-            this.chartControl1.AutoBindingSettingsEnabled = false;
-            this.chartControl1.AutoLayoutSettingsEnabled = false;
+            this.chartControl.AutoBindingSettingsEnabled = false;
+            this.chartControl.AutoLayoutSettingsEnabled = false;
             simpleDiagram1.EqualPieSize = false;
-            this.chartControl1.Diagram = simpleDiagram1;
-            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.chartControl1.Legend.MaxHorizontalPercentage = 30D;
-            this.chartControl1.Location = new System.Drawing.Point(0, 184);
-            this.chartControl1.Name = "chartControl1";
-            this.chartControl1.SeriesDataMember = "Series";
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl1.SeriesTemplate.ArgumentDataMember = "Arguments";
-            this.chartControl1.SeriesTemplate.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+            this.chartControl.Diagram = simpleDiagram1;
+            this.chartControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.chartControl.Legend.MaxHorizontalPercentage = 30D;
+            this.chartControl.Location = new System.Drawing.Point(0, 184);
+            this.chartControl.Name = "chartControl";
+            this.chartControl.SeriesDataMember = "Series";
+            this.chartControl.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.chartControl.SeriesTemplate.ArgumentDataMember = "Arguments";
+            this.chartControl.SeriesTemplate.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
             pieSeriesLabel1.Position = DevExpress.XtraCharts.PieSeriesLabelPosition.TwoColumns;
-            this.chartControl1.SeriesTemplate.Label = pieSeriesLabel1;
-            this.chartControl1.SeriesTemplate.LegendTextPattern = "{A}";
-            this.chartControl1.SeriesTemplate.ValueDataMembersSerializable = "Values";
+            this.chartControl.SeriesTemplate.Label = pieSeriesLabel1;
+            this.chartControl.SeriesTemplate.LegendTextPattern = "{A}";
+            this.chartControl.SeriesTemplate.ValueDataMembersSerializable = "Values";
             pieSeriesView1.RuntimeExploding = false;
             pieSeriesView1.SweepDirection = DevExpress.XtraCharts.PieSweepDirection.Counterclockwise;
             pieSeriesView1.Titles.AddRange(new DevExpress.XtraCharts.SeriesTitle[] {
             seriesTitle1});
-            this.chartControl1.SeriesTemplate.View = pieSeriesView1;
-            this.chartControl1.Size = new System.Drawing.Size(1008, 232);
-            this.chartControl1.TabIndex = 0;
+            this.chartControl.SeriesTemplate.View = pieSeriesView1;
+            this.chartControl.Size = new System.Drawing.Size(1008, 232);
+            this.chartControl.TabIndex = 0;
             // 
             // panel1
             // 
@@ -274,7 +274,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.pivotGridControl1);
-            this.panel2.Controls.Add(this.chartControl1);
+            this.panel2.Controls.Add(this.chartControl);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -289,7 +289,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Name = "f500_BAO_CAO_DANH_GIA";
-            this.Text = "f500_BAO_CAO_DANH_GIA";
+            this.Text = "f500_BAO_CAO_TONG";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
@@ -300,7 +300,7 @@
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -324,7 +324,7 @@
         private DevExpress.XtraPivotGrid.PivotGridField pivotGridField6;
         private DevExpress.XtraPivotGrid.PivotGridField pivotGridField5;
         private DevExpress.XtraPivotGrid.PivotGridField pivotGridField7;
-        private DevExpress.XtraCharts.ChartControl chartControl1;
+        private DevExpress.XtraCharts.ChartControl chartControl;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraPivotGrid.PivotGridField pivotGridField8;
